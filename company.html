@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dispatch Owl</title>
+
+    <!-- Bootstrap -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Loader -->
+    <div id="loader-section" class="">
+      <div class="loaderbox">
+        <img src="img/loader-logo.png" alt="Logo">
+        <div id="load">
+          <div>G</div>
+          <div>N</div>
+          <div>I</div>
+          <div>D</div>
+          <div>A</div>
+          <div>O</div>
+          <div>L</div>
+        </div>
+      </div>
+    </div>
+    <!-- Loader -->
+
+    <!-- Top Header -->
+    <header class="top-header">
+      <div class="date-time-div">
+          <span><i class="fa fa-calendar"></i> <small>22 August, 2018</small></span>
+          <span><i class="fa fa-clock-o"></i> <small>06:15pm</small></span>
+          <span><i class="fa fa-cloud"></i> <small>85<sup>o</sup>C</small></span>
+          <span><i class="fa fa-map-marker"></i> <small>India</small></span>
+      </div>
+
+      <div class="header-right-box">
+          <div class="company-id">
+            <img src="img/company-logo.png" alt="Company Logo">
+            <small>IN26345 - OPERATIONS UTSI</small>
+          </div>
+
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="img/avatar.png" alt="avatar"> Rajbeer kadyan
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+              <li><a href="#"><i class="fa fa-users"></i> Refer</a></li>
+              <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
+              <li class="logout-btn"><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+            </ul>
+          </div>
+      </div>
+    </header>
+    <!-- Top Header -->
+
+    <!-- Side Menu Bar -->
+    <nav class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#side-menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="ITS Dispatch Logo" class="logo-img">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="side-menu">
+          <ul class="nav navbar-nav" id="accordion" role="tablist" aria-multiselectable="true">
+              <li role="tab">
+                <a href="#dispatch-menu" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-tachometer"></i><span>Dispatch</span></a>
+                <ul class="collapse list-unstyled" id="dispatch-menu">
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Load Manager</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Load Finder</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Offered Trucks</span></a></li>
+                </ul>
+              </li>
+              <li role="tab" class="active">
+                <a href="#admin-menu" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-user"></i><span>Admin</span></a>
+                <ul class="collapse list-unstyled" id="admin-menu">
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Customers</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Shippers</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Consignees</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Drivers</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Trucks</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Trailers</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Customs Broker List</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Users</span></a></li>
+                  <li class="active"><a href="#"><i class="fa fa-angle-right"></i><span>Company</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Preferences</span></a></li>
+                </ul>
+              </li>
+              <li class="tab">
+                <a href="#accounting-menu" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-user"></i><span>Accounting</span></a>
+                <ul class="collapse list-unstyled" id="accounting-menu">
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Accounting Manager</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Accounting Summary</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Accounting Export</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Driver Pay Manager</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Driver Pay Export</span></a></li>
+                </ul>
+              </li>
+
+              <li class="tab">
+                <a href="#dashboard-menu" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-tachometer"></i><span>Dashboard</span></a>
+                <ul class="collapse list-unstyled" id="dashboard-menu">
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Dashboard</span></a></li>
+                </ul>
+              </li>
+
+              <li class="tab">
+                <a href="#reports-menu" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-book"></i><span>Reports</span></a>
+                <ul class="collapse list-unstyled" id="reports-menu">
+                  <li><a href="#" data-toggle="modal" data-target="#manage-report-popup"><i class="fa fa-angle-right"></i><span>Manage Reports</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Advanced Statistics</span></a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#tax-reports"><i class="fa fa-angle-right"></i><span>Tax Reports</span></a></li>
+                </ul>
+              </li>
+              <li class="tab">
+                <a href="#help-menu" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-question-circle"></i><span>Help</span></a>
+                <ul class="collapse list-unstyled" id="help-menu">
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Training Videos</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Getting Started Guide</span></a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#contact-information"><i class="fa fa-angle-right"></i><span>Contact Information</span></a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i><span>Open Test Account</span></a></li>
+                </ul>
+              </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <!-- Side Menu Bar -->
+
+    <!-- Mid Content -->
+    <div class="mid-container">
+      <div class="mid-scroll-area">
+
+        <div class="filter-box">
+          <h4>Filter</h4>
+          <form>
+            <div class="form-group required">
+              <label for="find" class="control-label">Find</label>
+              <input type="text" class="form-control" id="find" placeholder="">
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-success">Search</button>
+              <button type="button" class="btn btn-info">Show All</button>
+              <a href="#" class="btn btn-danger filter-close">Cancel</a>
+            </div>
+          </form>
+        </div>
+        
+        <div class="page-title">
+          <h4>Company List</h4>
+          <div class="add-help-link">
+            <a href="#" data-toggle="modal" data-target="#add-company-popup" class="btn btn-primary">Add Company List</a>
+            <a href="#" data-toggle="modal" data-target="#online-video" class="btn btn-success"><i class="fa fa-question-circle"></i></a>
+          </div>
+        </div>
+
+        <div class="">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#active-tab" aria-controls="active-tab" role="tab" data-toggle="tab">Active</a></li>
+            <li role="presentation"><a href="#inactive-tab" aria-controls="inactive-tab" role="tab" data-toggle="tab">Inactive</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            
+            <!-- First Tab -->
+            <div role="tabpanel" class="tab-pane active" id="active-tab">
+              <!-- Table Search -->
+              <div class="top-search-bar">
+                <div class="input-group table-search-box">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                  </span>
+                </div>
+                <a href="#" class="btn btn-primary filter-btn"><i class="fa fa-filter" title="Filter"></i>Filter</a>
+                <div class="clearfix"></div>
+              </div>
+              <!-- Table Search -->
+
+              <div class="table-responsive bottom-gape">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                          <tr>
+                              <th>Company Name(s)</th>
+                              <th width="100">Telephone</th>
+                              <th width="40" class="text-center">Files</th>
+                              <th width="40" class="text-center">Edit</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td>jk</td>
+                              <td>317-403-2771</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Tata</td>
+                              <td>317-442-4226</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>jk</td>
+                              <td>317-403-2771</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Tata</td>
+                              <td>317-442-4226</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>jk</td>
+                              <td>317-403-2771</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Tata</td>
+                              <td>317-442-4226</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>jk</td>
+                              <td>317-403-2771</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Tata</td>
+                              <td>317-442-4226</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                        </tbody>
+                </table>
+              </div>
+
+              <div class="bottom-paging">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="page-number">
+                  <select class="form-control">
+                    <option selected="selected">10</option>
+                    <option>20</option>
+                    <option>30</option>
+                  </select>
+                  Show Entries
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <!-- First Tab -->
+
+            <!-- Second Tab -->
+            <div role="tabpanel" class="tab-pane" id="inactive-tab">
+
+              <!-- Table Search -->
+              <div class="top-search-bar">
+                <div class="input-group table-search-box">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                  </span>
+                </div>
+                <a href="#" class="btn btn-primary filter-btn" title="Filter"><i class="fa fa-filter"></i>Filter</a>
+                <div class="clearfix"></div>
+              </div>
+              <!-- Table Search -->
+              
+              <div class="table-responsive bottom-gape">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                          <tr>
+                              <th>Company Name(s)</th>
+                              <th width="100">Telephone</th>
+                              <th width="40" class="text-center">Files</th>
+                              <th width="40" class="text-center">Edit</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td>jk</td>
+                              <td>317-403-2771</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Tata</td>
+                              <td>317-442-4226</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>jk</td>
+                              <td>317-403-2771</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Tata</td>
+                              <td>317-442-4226</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>jk</td>
+                              <td>317-403-2771</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Tata</td>
+                              <td>317-442-4226</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>jk</td>
+                              <td>317-403-2771</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Tata</td>
+                              <td>317-442-4226</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>jk</td>
+                              <td>317-403-2771</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Tata</td>
+                              <td>317-442-4226</td>
+                              <td class="text-center"><a href="#" data-toggle="modal" data-target="#file-popup" title="File"><img src="img/table-icon/file.png" alt="Img"></a></td>
+                              <td class="text-center">
+                                <a href="#" data-toggle="modal" data-target="#edit-company-popup" title="Edit Driver List"><img src="img/table-icon/edit-icon.png" alt="Img"></a>
+                              </td>
+                          </tr>
+                        </tbody>
+                </table>
+              </div>
+
+              <div class="bottom-paging">
+                <nav aria-label="Page navigation">
+                  <ul class="pagination">
+                    <li>
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="page-number">
+                  <select class="form-control">
+                    <option selected="selected">10</option>
+                    <option>20</option>
+                    <option>30</option>
+                  </select>
+                  Show Entries
+                </div>
+                <div class="clearfix"></div>
+              </div>
+
+            </div>
+            <!-- Second Tab -->
+          
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Mid Content -->
+
+
+    <!-- Footer Start -->
+    <footer class="footer-copyright">
+        <span class="pull-left">Copyright © 2018 Dispatch Owl All rights reserved.</span>
+        <span class="pull-right"> Design and Developed by <a href="http://www.infiniteitsolutions.net/" target="_blank">Infinite It Solution</a></span>
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+<!--///////////////////////// Popups Start /////////////////////////////////////////-->
+    <!-- Online Video -->
+    <div class="modal fade" id="online-video" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Online Video</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Title</th>
+                      <th class="text-center" width="80">Length</th>
+                      <th class="text-center" width="60">View</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Loads</td>
+                      <td>How to Create a Driver Dispatch</td>
+                      <td class="text-center">00:02:02</td>
+                      <td class="text-center"><a href="#" data-toggle="modal" data-target="#online-video-show"><img src="img/table-icon/tv.png" alt="Img"></a></td>
+                    </tr>
+                    <tr>
+                      <td>Loads</td>
+                      <td>What is the Difference between New Pending and New Active Load</td>
+                      <td class="text-center">00:02:02</td>
+                      <td class="text-center"><a href="#" data-toggle="modal" data-target="#online-video-show"><img src="img/table-icon/tv.png" alt="Img"></a></td>
+                    </tr>
+                    <tr>
+                      <td>Loads</td>
+                      <td>How to Post a Truck Directly to the Internet Truck Stop</td>
+                      <td class="text-center">00:02:02</td>
+                      <td class="text-center"><a href="#" data-toggle="modal" data-target="#online-video-show"><img src="img/table-icon/tv.png" alt="Img"></a></td>
+                    </tr>
+                    <tr>
+                      <td>Loads</td>
+                      <td>How to Create a LTL Load</td>
+                      <td class="text-center">00:02:02</td>
+                      <td class="text-center"><a href="#" data-toggle="modal" data-target="#online-video-show"><img src="img/table-icon/tv.png" alt="Img"></a></td>
+                    </tr>
+                    <tr>
+                      <td>Loads</td>
+                      <td>How to restore a deleted load</td>
+                      <td class="text-center">00:02:02</td>
+                      <td class="text-center"><a href="#" data-toggle="modal" data-target="#online-video-show"><img src="img/table-icon/tv.png" alt="Img"></a></td>
+                    </tr>
+                    <tr>
+                      <td>Loads</td>
+                      <td>How to Post a Load Directly to the Internet Truck Stop</td>
+                      <td class="text-center">00:02:02</td>
+                      <td class="text-center"><a href="#" data-toggle="modal" data-target="#online-video-show"><img src="img/table-icon/tv.png" alt="Img"></a></td>
+                    </tr>
+                    <tr>
+                      <td>Loads</td>
+                      <td>How to input tracking notes</td>
+                      <td class="text-center">00:02:02</td>
+                      <td class="text-center"><a href="#" data-toggle="modal" data-target="#online-video-show"><img src="img/table-icon/tv.png" alt="Img"></a></td>
+                    </tr>
+                    <tr>
+                      <td>Loads</td>
+                      <td>Email Driver and-or Carrier Load Confirmation</td>
+                      <td class="text-center">00:02:02</td>
+                      <td class="text-center"><a href="#" data-toggle="modal" data-target="#online-video-show"><img src="img/table-icon/tv.png" alt="Img"></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Online Video -->
+    <!-- Online Video -->
+    <div class="modal fade" id="online-video-show" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How to Create a Driver Dispatch</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="420" src="https://www.youtube.com/embed/XZxZC0lgOlc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Online Video -->
+
+    <!-- Add Company popup -->
+    <div class="modal fade" id="add-company-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Company</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Company Name</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Address</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Address 2</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Country</label>
+                    <select class="form-control">
+                      <option selected="selected"></option>
+                      <option>Select Country</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">State</label>
+                    <select class="form-control">
+                      <option selected="selected"></option>
+                      <option>Select State</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">City</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Zip</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Contact Person Name</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Contact Number</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Email</label>
+                    <input placeholder="" type="email" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Fax Number</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Register Date</label>
+                    <input placeholder="" type="text" class="form-control datepicker">
+                  </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-success" type="button" name="action">Save</button>
+                    <a href="#!" data-dismiss="modal" aria-label="Close" class="btn btn-primary">Cancel</a>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Company popup End-->
+
+    <!-- Add Company popup -->
+    <div class="modal fade" id="edit-company-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Company</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Company Name</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Address</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Address 2</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Country</label>
+                    <select class="form-control">
+                      <option selected="selected"></option>
+                      <option>Select Country</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">State</label>
+                    <select class="form-control">
+                      <option selected="selected"></option>
+                      <option>Select State</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">City</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Zip</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Contact Person Name</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Contact Number</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Email</label>
+                    <input placeholder="" type="email" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Fax Number</label>
+                    <input placeholder="" type="text" class="form-control">
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12 form-group required">
+                    <label class="control-label">Register Date</label>
+                    <input placeholder="" type="text" class="form-control datepicker">
+                  </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-success" type="button" name="action">Save</button>
+                    <a href="#!" data-dismiss="modal" aria-label="Close" class="btn btn-primary">Cancel</a>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Company popup End-->
+
+
+    <!-- Manage Reports Popup Start-->
+    <div class="modal fade" id="manage-report-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Reports</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 form-group required">
+                      <label class="control-label">Category Select</label>
+                      <select class="form-control">
+                          <option value="0" selected="selected">Customer</option>
+                          <option value="1">Driver</option>
+                          <option value="3">Driver Pay</option>
+                          <option value="2">Sales Representatives</option>
+                          <option value="4">External Carrier</option>
+                          <option value="5">Dispatcher</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-sm-12 form-group required">
+                      <label class="control-label">Customer</label>
+                      <select class="form-control">
+                          <option value="all">All Customers</option>
+                          <option value="select">Select Customers</option>
+                          <option value="2546803">AMBRACO</option>
+                          <option value="2612838">Liquidbidding/ Barjas</option>
+                          <option value="2595265">MPL CORPORATION</option>
+                          <option value="3375874">Pelican Packaging Company</option>
+                          <option value="3748830">TBC Credit</option>
+                          <option value="2567172">TRANS WORLD LOGITECH (SKC FILMS)</option>
+                          <option value="2476724">UNIVERSITY LOFT</option>
+                          <option value="3601431">Viking Transportation</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-sm-12 form-group required">
+                      <label class="control-label">Filter By</label>
+                      <select class="form-control">
+                          <option value="entrya.date">Ship Date</option>
+                          <option value="entrya.delivery_date">Delivery Date</option>
+                          <option value="a.invoice_date">Invoice Date</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-sm-12 form-group required">
+                      <label class="control-label" for="from-date">From Date</label>
+                      <input type="text" name="from-date" class="form-control datepicker">
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 form-group required">
+                      <label class="control-label" for="to-date">To Date</label>
+                      <input type="text" name="to-date" class="form-control datepicker">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 required">
+                      <label class="control-label">Display Options</label>
+                      <span class="all-check">
+                          <input type="checkbox" id="check-all">
+                          <label for="check-all">Check All</label>
+                      </span>
+
+                      <div class="checkbox report-checks">
+                          <label for="origin-destination">
+                            <input type="checkbox" id="origin-destination" checked="checked">
+                            Origin / Destination
+                          </label>
+                          <label for="load-type">
+                            <input type="checkbox" id="load-type">
+                            Load Type
+                          </label>
+                          <label for=" additional-charges">
+                            <input type="checkbox" id=" additional-charges">
+                            Additional Charges
+                          </label>
+                          <label for="FSC">
+                            <input type="checkbox" id="FSC">
+                            F.S.C.
+                          </label>
+                          <label for="revenue">
+                            <input type="checkbox" id="revenue">
+                            Revenue
+                          </label>
+                          <label for="weight">
+                            <input type="checkbox" id="weight">
+                            Weight
+                          </label>
+                          <label for="truck">
+                            <input type="checkbox" id="truck">
+                            Truck #
+                          </label>
+                          <label for="PO-Numbers">
+                            <input type="checkbox" id="PO-Numbers">
+                            PO Numbers
+                          </label>
+                          <label for="trailer">
+                            <input type="checkbox" id="trailer">
+                            Trailer #
+                          </label>
+                          <label for="Net-Profit">
+                            <input type="checkbox" id="Net-Profit">
+                            Net Profit
+                          </label>
+                          <label for="Line-Haul">
+                            <input type="checkbox" id="Line-Haul">
+                            Line Haul
+                          </label>
+                          <label for="P&D">
+                            <input type="checkbox" id="P&D">
+                            P&D
+                          </label>
+                          <label for="Carrier-Pay">
+                            <input type="checkbox" id="Carrier-Pay">
+                            Carrier Pay
+                          </label>
+                          <label for="Sales-Rep">
+                            <input type="checkbox" id="Sales-Rep">
+                            Sales Rep
+                          </label>
+                          <label for="Driver-Pay">
+                            <input type="checkbox" id="Driver-Pay">
+                            Driver Pay
+                          </label>
+                          <label for="Miles">
+                            <input type="checkbox" id="Miles">
+                            Miles
+                          </label>
+                          <label for="Equipment">
+                            <input type="checkbox" id="Equipment">
+                            Equipment Type
+                          </label>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="text-center">
+                  <a class="btn btn-success">Download</a>
+                  <a href="#!" class="btn btn-primary"  data-dismiss="modal">Cancel</a>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Manage Reports Popup End -->
+    
+    <!-- Contact Information Popup Start-->
+    <div class="modal fade" id="contact-information" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Information</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-5 col-sm-12">
+                    <img src="img/login-image.jpg" alt="Img" class="img-responsive">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                      <h5>Dispatch Owl</h5>
+                      <address>106 - 1091 Gorham St <br>Newmarket, ON <br>L3Y 8X7</address>
+                      <p>Toll Free: +1 (000) 000-0000</p>
+                      <p>Fax: (000) 000-0000</p>
+                      <a href="#">www.dispatchowl.com</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Information Popup End -->
+
+    <!-- Tax Reports Popup Start-->
+    <div class="modal fade" id="tax-reports" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tax Reports</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 form-group required">
+                      <label class="control-label">Report</label>
+                      <select name="report" id="report" class="form-control">
+                          <option value="">Please Select</option>
+                          <option value="1" selected="selected">1099 Received</option>
+                          <option value="0" selected="selected">1099 Generated</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-sm-12 form-group required">
+                      <label class="control-label">Year</label>
+                      <select class="form-control">
+                            <option value="">Please Select</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018" selected="selected">2018</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-sm-12 form-group required">
+                      <label class="control-label">External Carrier</label>
+                      <select name="carrier_id" class="form-control">
+                          <option value="">Please Select</option>
+                          <option value="all">All Carriers</option>
+                          <option value="5840092">Test Carrier</option>
+                      </select>
+                    </div>
+                    <div class="col-xs-12">
+                        <p>This 1099 report is going to use your current load data. In order for this form to be accurate, you must ensure that all carrier fees have been entered accurately for the time period selected. </p>
+                    </div>
+                </div>
+              <div class="text-center">
+                <a href="#" class="btn btn-success">Generate</a>
+                <a href="#" data-dismiss="modal" class="btn btn-primary">Cancel</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tax Reports Popup End -->
+
+
+     <!-- Files Popup -->
+    <div class="modal fade" id="file-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Files</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-center">To upload files click <button type="button" class="btn btn-primary">Add File</button> or drag and drop files anywhere in this window.</p>
+                <div class="table-responsive">
+                  <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                      <th>File</th>
+                      <th class="text-center" width="80">Size</th>
+                      <th class="text-center" width="90">Options</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Liquidbidding/ Barjas</td>
+                        <td class="text-center">125</td>
+                        <td class="text-center">
+                          <a href="#" title="Download"><img src="img/table-icon/download.png" alt="Img"></a>
+                          <a href="#" title="Email"><img src="img/table-icon/email.png" alt="Img"></a>
+                          <a href="#" title="Close"><img src="img/table-icon/close.png" alt="Img"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>TBC Credit</td>
+                        <td class="text-center">125</td>
+                        <td class="text-center">
+                          <a href="#" title="Download"><img src="img/table-icon/download.png" alt="Img"></a>
+                          <a href="#" title="Email"><img src="img/table-icon/email.png" alt="Img"></a>
+                          <a href="#" title="Close"><img src="img/table-icon/close.png" alt="Img"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>TRANS WORLD LOGITECH (SKC FILMS)</td>
+                        <td class="text-center">125</td>
+                        <td class="text-center">
+                          <a href="#" title="Download"><img src="img/table-icon/download.png" alt="Img"></a>
+                          <a href="#" title="Email"><img src="img/table-icon/email.png" alt="Img"></a>
+                          <a href="#" title="Close"><img src="img/table-icon/close.png" alt="Img"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>UNIVERSITY LOFT</td>
+                        <td class="text-center">125</td>
+                        <td class="text-center">
+                          <a href="#" title="Download"><img src="img/table-icon/download.png" alt="Img"></a>
+                          <a href="#" title="Email"><img src="img/table-icon/email.png" alt="Img"></a>
+                          <a href="#" title="Close"><img src="img/table-icon/close.png" alt="Img"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Viking Transportation</td>
+                        <td class="text-center">125</td>
+                        <td class="text-center">
+                          <a href="#"><img src="img/table-icon/download.png" alt="Img"></a>
+                          <a href="#"><img src="img/table-icon/email.png" alt="Img"></a>
+                          <a href="#"><img src="img/table-icon/close.png" alt="Img"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>AMBRACO</td>
+                        <td class="text-center">125</td>
+                        <td class="text-center">
+                          <a href="#"><img src="img/table-icon/download.png" alt="Img"></a>
+                          <a href="#"><img src="img/table-icon/email.png" alt="Img"></a>
+                          <a href="#"><img src="img/table-icon/close.png" alt="Img"></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <br>
+                <div class="text-center">
+                  <button class="btn btn-success" type="button" name="action">Save</button>
+                  <a href="#!" data-dismiss="modal" aria-label="Close" class="btn btn-primary">Cancel</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- Files Popup -->
+
+<!--///////////////////////// Popups End /////////////////////////////////////////-->
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
